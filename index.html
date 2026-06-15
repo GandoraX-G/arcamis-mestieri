@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>⚗️ Mestieri di Arcamis</title>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=IM+Fell+English:ital@0;1&family=Uncial+Antiqua&display=swap" rel="stylesheet">
 <style>
   
 
@@ -27,7 +26,7 @@
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  body { background: var(--bg); background-image: none; color: var(--text); transition: background .3s, color .3s; }
+  body { background: var(--bg); background-image: none; color: var(--text); transition: background .3s, color .3s; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; line-height: 1.6; }
 
   /* ── HEADER ── */
   header {
@@ -41,7 +40,7 @@
 
   
   header h1 {
-    font-family: 'MedievalSharp', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: clamp(1.4rem, 4vw, 2.4rem);
     font-weight: 900;
     color: var(--gold2);
@@ -50,7 +49,7 @@
     margin-bottom: 4px;
   }
   header p {
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .85rem;
     color: var(--text3);
     letter-spacing: .12em;
@@ -94,7 +93,7 @@
     background: var(--panel);
     border: 1px solid var(--border);
     color: var(--text2);
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .78rem;
     letter-spacing: .08em;
     padding: 7px 14px;
@@ -129,7 +128,7 @@
   }
   .sidenav-section { padding: 0 0 16px; }
   .sidenav-title {
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .65rem;
     letter-spacing: .15em;
     text-transform: uppercase;
@@ -164,7 +163,7 @@
     box-shadow: var(--shadow), var(--glow);
   }
   .intro-card h2 {
-    font-family: 'MedievalSharp', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: 1.5rem;
     color: var(--gold2);
     margin-bottom: 10px;
@@ -189,7 +188,7 @@
     padding: 12px 14px;
   }
   .rule-box h4 {
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .75rem;
     letter-spacing: .1em;
     color: var(--gold);
@@ -213,7 +212,7 @@
     border-radius: 50%;
     width: 48px; height: 48px;
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--gold2);
@@ -221,7 +220,7 @@
     box-shadow: 0 0 14px rgba(90,45,139,.4);
   }
   .lv-header h3 {
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: 1.1rem;
     color: var(--gold);
     letter-spacing: .06em;
@@ -239,7 +238,7 @@
     border-bottom: 2px solid var(--border2);
   }
   thead th {
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .7rem;
     letter-spacing: .1em;
     text-transform: uppercase;
@@ -265,7 +264,7 @@
   /* tipologia badges */
   .badge {
     display: inline-block;
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .63rem;
     letter-spacing: .08em;
     padding: 2px 7px;
@@ -303,7 +302,7 @@
   /* ── MATERIALI SPECIALI ── */
   .mat-section { margin-bottom: 32px; }
   .mat-section h3 {
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .8rem;
     letter-spacing: .15em;
     text-transform: uppercase;
@@ -326,7 +325,7 @@
   }
   .mat-card:hover { border-color: var(--gold); box-shadow: 0 0 16px rgba(201,168,76,.1); }
   .mat-card h4 {
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .9rem;
     color: var(--gold2);
     margin-bottom: 6px;
@@ -365,7 +364,7 @@
     font-size: 6rem; opacity: .06; pointer-events: none;
   }
   .guide-hero h2 {
-    font-family: 'MedievalSharp', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: 1.6rem; color: var(--gold2);
     margin-bottom: 10px;
     text-shadow: 0 0 24px rgba(201,168,76,.35);
@@ -373,7 +372,7 @@
   .guide-hero p { color: var(--text2); font-size: 1.02rem; line-height: 1.65; }
   .guide-section { margin-bottom: 28px; }
   .guide-section h3 {
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .85rem; letter-spacing: .14em; text-transform: uppercase;
     color: var(--gold); margin-bottom: 14px;
     padding-bottom: 7px; border-bottom: 1px solid var(--border);
@@ -386,25 +385,25 @@
     transition: border-color .2s, box-shadow .2s;
   }
   .guide-card:hover { border-color: var(--border2); box-shadow: var(--glow); }
-  .guide-card h4 { font-family: 'Uncial Antiqua', serif; font-size: .88rem; color: var(--gold2); margin-bottom: 6px; }
+  .guide-card h4 { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; font-size: .88rem; color: var(--gold2); margin-bottom: 6px; }
   .guide-card p  { font-size: .88rem; color: var(--text2); line-height: 1.5; }
   .guide-card ul { padding-left: 14px; }
   .guide-card li { font-size: .85rem; color: var(--text2); margin-bottom: 3px; }
   .guide-card .tag {
-    display: inline-block; font-family: 'Uncial Antiqua', serif;
+    display: inline-block; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .62rem; letter-spacing: .08em;
     padding: 2px 7px; border-radius: 3px; margin-right: 4px; margin-bottom: 4px;
     background: rgba(201,168,76,.12); color: var(--gold); border: 1px solid rgba(201,168,76,.25);
   }
   .dt-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
   .dt-table th {
-    font-family: 'Uncial Antiqua', serif; font-size: .7rem; letter-spacing: .1em;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; font-size: .7rem; letter-spacing: .1em;
     text-transform: uppercase; color: var(--gold); padding: 9px 14px;
     text-align: left; background: var(--panel2); border-bottom: 2px solid var(--border2);
   }
   .dt-table td { padding: 9px 14px; color: var(--text2); border-bottom: 1px solid rgba(58,47,85,.4); }
   .dt-table tr:hover td { background: rgba(201,168,76,.03); }
-  .dt-table td:first-child { color: var(--gold2); font-weight: 600; font-family: 'Uncial Antiqua', serif; }
+  .dt-table td:first-child { color: var(--gold2); font-weight: 600; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
   .dt-table td strong { color: var(--gold); }
   .guide-note {
     background: rgba(212,137,26,.08); border: 1px solid rgba(212,137,26,.3);
@@ -491,7 +490,7 @@
     display: flex; align-items: center; justify-content: space-between;
   }
   .mobile-drawer-header h3 {
-    font-family: 'Uncial Antiqua', serif;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     font-size: .8rem; letter-spacing: .12em;
     text-transform: uppercase; color: var(--gold);
   }
@@ -1669,7 +1668,7 @@ function renderPergamene() {
   </div>
 
   <div class="intro-card" style="margin-bottom:24px">
-    <h4 style="color:var(--gold2);font-family:'Uncial Antiqua',serif;margin-bottom:10px">📖 Come funziona</h4>
+    <h4 style="color:var(--gold2);font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;margin-bottom:10px">📖 Come funziona</h4>
     <p style="color:var(--text2);font-size:.95rem;line-height:1.7">
       Come Artista ed Incantatore hai la possibilità di scrivere delle <strong style="color:var(--gold)">pergamene magiche</strong>,
       pregne della tua capacità magica e scritte in modo tale che soltanto tu — e chi è in grado di leggerle — possiate usarle.
