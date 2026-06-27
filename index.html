@@ -1411,6 +1411,61 @@ const MESTIERI = [
       {nome:"Fili dell'Arazzo del Destino", rarity:'legendary', costo:'2000–8000 MO/filo', desc:"Fili estratti dall'arazzo del destino tessuto dalle Norne cosmiche. Ciascun filo rappresenta una vita. Intrecciati in un indumento, permettono di manipolare il destino stesso.", prop:[{k:'Provenienza',v:'Norne cosmiche, praticamente inaccessibili'},{k:'Proprietà',v:'Manipolazione del destino'},{k:'Usi',v:'Tessuto del Fato'}]},
     ]
   },
+  { id:'meccanico', emoji:'⚙️', nome:'Meccanico', tagline:'Congegni · Automi · Modifiche · Orologi — la precisione come arte',
+    desc:'Orologi di precisione, congegni meccanici, protesi e automi — l\'ingegno al servizio dell\'officina.',
+    patente:'P.M.T.',
+    materLav: [15,40,150,600,1000],
+    livelli: [
+      { lv:1, items:[
+        {n:'Orologio da Tasca', mp:'20 MO Ingranaggi di Ottone', ms:'10 MO Molle di Acciaio', tip:'Equipaggiamento', desc:'Segna l\'ora con precisione. Vantaggio ai tiri di Sopravvivenza per stimare il tempo.', costo:30, vend:60, dt:[3,1,1,1,1]},
+        {n:'Trappola a Scatto', mp:'10 MO Ferro', ms:'5 MO Molla d\'Acciaio', tip:'Equipaggiamento', desc:'Immobilizza: DC 13 FOR o Restrained. 1d4 perforante all\'attivazione.', costo:15, vend:30, dt:[2,1,1,1,1]},
+        {n:'Lanterna a Ingranaggi', mp:'15 MO Ottone', ms:'10 MO Cristallo Trasparente', tip:'Equipaggiamento', desc:'Funziona senza olio: 8h di luce su area 9m. Ricaricabile con 1 DT.', costo:25, vend:50, dt:[3,1,1,1,1]},
+        {n:'Grimaldello di Precisione', mp:'8 MO Filo d\'Acciaio', ms:'4 MO Olio Lubrificante', tip:'Equipaggiamento', desc:'+2 ai tiri per scassinare serrature meccaniche.', costo:12, vend:24, dt:[1,1,1,1,1]},
+        {n:'Carrucola Meccanica', mp:'12 MO Ferro', ms:'6 MO Corda Rinforzata', tip:'Equipaggiamento', desc:'Riduce il peso percepito per sollevamento: conta metà del peso.', costo:18, vend:36, dt:[2,1,1,1,1]},
+        {n:'Fischietto a Frequenze', mp:'8 MO Ottone', ms:'4 MO Cristallo Risonante', tip:'Equipaggiamento', desc:'Richiama animali addestrati o segnala alla distanza di 300m.', costo:12, vend:24, dt:[1,1,1,1,1]},
+        {n:'Chiave Universale (5 usi)', mp:'15 MO Acciaio Flessibile', ms:'5 MO Olio Magico', tip:'Equipaggiamento', desc:'Apre serrature standard senza tiro. 5 usi totali prima di consumarsi.', costo:20, vend:40, dt:[2,1,1,1,1]},
+        {n:'Molla a Ricarica (kit da 10)', mp:'6 MO Acciaio', ms:'2 MO Lubrificante', tip:'Equipaggiamento', desc:'Componente standard per riparazioni e costruzioni meccaniche di LV1.', costo:8, vend:16, dt:[1,1,1,1,1]},
+      ]},
+      { lv:2, items:[
+        {n:'Protesi Meccanica (arto)', mp:'80 MO Acciaio', ms:'40 MO Ingranaggi di Precisione', tip:'Equipaggiamento', desc:'Sostituisce un arto perso. Funzionale come l\'originale. Richiede 1 DT/mese manutenzione.', costo:120, vend:240, dt:[5,2,2,2,1]},
+        {n:'Balestra a Ripetizione', mp:'60 MO Acciaio', ms:'40 MO Meccanismo a Molla', tip:'Arma', desc:'Carica 3 dardi automaticamente. Azione bonus per sparare il secondo dardo.', costo:100, vend:200, dt:[4,2,1,1,1]},
+        {n:'Armatura Rinforzata (modifica)', mp:'70 MO Piastre d\'Acciaio', ms:'30 MO Rivetti di Mithral', tip:'Equipaggiamento', desc:'Aggiunge +1 CA a un\'armatura già esistente. Non cumulabile.', costo:100, vend:200, dt:[4,2,1,1,1]},
+        {n:'Congegno Esplosivo (3 cariche)', mp:'50 MO Polvere Nera', ms:'50 MO Carcassa di Rame', tip:'Equipaggiamento', desc:'Innesco ritardato (1–4 turni). 3d6 fuoco in area 3m, DC 14 DEX dimezza.', costo:100, vend:200, dt:[4,2,1,1,1]},
+        {n:'Gancio Retrattile', mp:'60 MO Acciaio', ms:'40 MO Cavo d\'Acciaio (15m)', tip:'Equipaggiamento', desc:'Spara e aggancia superfici entro 15m. Supporta 200kg. Velocità raddoppiata per arrampicata.', costo:100, vend:200, dt:[4,2,1,1,1]},
+        {n:'Orologio da Muro (pendolo)', mp:'90 MO Ottone e Cristallo', ms:'50 MO Meccanismo a Pesi', tip:'Equipaggiamento — Arredamento', desc:'Oggetto pregiato. Preciso al minuto. Valore decorativo per ambienti nobiliari.', costo:140, vend:280, dt:[5,2,1,1,1]},
+        {n:'Meccanismo di Difesa (fisso)', mp:'80 MO Ferro', ms:'50 MO Lame a Molla', tip:'Equipaggiamento', desc:'Installabile in una stanza. Attacca chi entra senza codice: +5 colpire, 1d10 perforante.', costo:130, vend:260, dt:[5,2,1,1,1]},
+      ]},
+      { lv:3, items:[
+        {n:'Clockwork Amulet', mp:'200 MO Ingranaggi d\'Oro', ms:'100 MO Cristallo Arcano', tip:'Oggetto Magico Comune', url:'https://5e.tools/items.html#clockwork%20amulet_xge', desc:'1/giorno: ottieni 10 su un tiro d\'attacco invece di tirare il dado.', costo:300, vend:600, dt:[5,3,2,1,1]},
+        {n:'Automa da Ricognizione (Tiny)', prog:true, mp:'250 MO Acciaio e Ottone', ms:'150 MO Cristallo Hextech Grado I', tip:'Oggetto Magico Comune', desc:'Automa volante Tiny. CA 12, 5 PF. Trasmette visione al costruttore entro 60m. 8h autonomia.', costo:400, vend:800, dt:[6,3,2,1,1]},
+        {n:'Manifold Tool', mp:'150 MO Metallo Lavorato', ms:'100 MO Ingranaggi Speciali', tip:'Oggetto Magico Comune', url:'https://5e.tools/items.html#manifold%20tool_llk', desc:'Strumento multiuso che si adatta a qualsiasi kit di strumenti artigianali.', costo:250, vend:500, dt:[5,2,2,1,1]},
+        {n:'Modifica Arma: Lama Vibrante', prog:true, mp:'200 MO Cristallo Risonante', ms:'150 MO Meccanismo Integrato', tip:'Oggetto Magico Comune', desc:'Modifica su spada/ascia: +1 ai danni (la lama vibra ad alta frequenza). Richiede 1 DT/mese manutenzione.', costo:350, vend:700, dt:[6,3,2,1,1]},
+        {n:'Scudo a Deflettore', prog:true, mp:'180 MO Acciaio Trattato', ms:'120 MO Molle Arcane', tip:'Oggetto Magico Comune', desc:'Scudo con meccanismo: reazione per +2 CA contro un attacco/turno.', costo:300, vend:600, dt:[5,3,2,1,1]},
+      ]},
+      { lv:4, items:[
+        {n:'Automa da Combattimento (Small)', prog:true, mp:'1000 MO Acciaio di Noxus', ms:'500 MO Cristallo Hextech Grado II', tip:'Oggetto Magico Non Comune', desc:'Automa Small. CA 14, 30 PF. Attacca su comando: +5 colpire, 1d8+2 perforante. 12h autonomia.', costo:1500, vend:3000, dt:[10,5,3,2]},
+        {n:'Esoscheletro (modifica armatura)', prog:true, mp:'800 MO Acciaio Lavorato', ms:'700 MO Pistoni Idraulici', tip:'Oggetto Magico Non Comune', desc:'Modifica su armatura pesante: FOR considerata 20 per capacità di carico, +5ft velocità in armatura pesante.', costo:1500, vend:3000, dt:[10,5,3,2]},
+        {n:'Orologio Dimensionale', prog:true, mp:'900 MO Cristallo Temporale', ms:'600 MO Ingranaggi del Piano Etereo', tip:'Oggetto Magico Non Comune', desc:'1/giorno: ferma il tempo soggettivo per 1 round (come Haste, senza concentrazione).', costo:1500, vend:3000, dt:[10,5,3,2]},
+        {n:'Modifica Arma: Cannone a Vapore', prog:true, mp:'700 MO Ottone Rinforzato', ms:'800 MO Caldaia Miniaturizzata', tip:'Oggetto Magico Non Comune', desc:'Modifica su arma a distanza: gittata raddoppiata, +1d6 fuoco ai danni, ricarica dopo ogni round.', costo:1500, vend:3000, dt:[10,5,3,2]},
+        {n:'Protesi Arcano-Meccanica', prog:true, mp:'600 MO Mithral', ms:'900 MO Cristallo Hextech + Fili d\'Oro', tip:'Oggetto Magico Non Comune', desc:'Protesi avanzata: +1 ai tiri per colpire con quell\'arto, può lanciare Mage Hand 3/giorno (non richiede slot).', costo:1500, vend:3000, dt:[10,5,3,2]},
+      ]},
+      { lv:5, items:[
+        {n:'Automa Guardiano (Medium)', prog:true, mp:'4000 MO Adamantio', ms:'3000 MO Nucleo Hextech Puro', tip:'Oggetto Magico Raro', desc:'Automa Medium senziente. CA 17, 80 PF, +8 colpire, 2d10+5 perforante. Parla Comune. Agisce autonomamente in difesa del creatore.', costo:7000, vend:14000, dt:[25,15,10]},
+        {n:'Macchina del Tempo (1 uso)', prog:true, mp:'5000 MO Cristallo Zilean Antico', ms:'5000 MO Frammenti del Filo del Tempo', tip:'Oggetto Magico Raro — Unico', desc:'1 uso: torna indietro di fino a 10 minuti nel tempo. Solo il creatore ricorda gli eventi. Si distrugge dopo l\'uso.', costo:10000, vend:20000, dt:[40]},
+        {n:'Fortezza Tascabile', prog:true, mp:'4000 MO Acciaio di Noxus', ms:'3000 MO Ingranaggi del Piano Etereo', tip:'Oggetto Magico Raro', url:'https://5e.tools/items.html#instant%20fortress_dmg', desc:'Versione meccanica dell\'Instant Fortress: torre d\'acciaio 3x3x9m. Deployabile come azione. CA 20, 200 PF.', costo:7000, vend:14000, dt:[30,18,12]},
+        {n:'Nucleo Automa Leggendario', prog:true, mp:'6000 MO Adamantio Purissimo', ms:'4000 MO Essenza del Costrutto', tip:'Oggetto Magico Raro', desc:'Nucleo per automa Large o superiore. L\'automa ha INT 10, può imparare 3 lingue e 2 competenze nei strumenti.', costo:10000, vend:20000, dt:[35,20]},
+      ]},
+    ],
+    materialiSpeciali: [
+      {nome:'Ingranaggi di Ottone', rarity:'common', costo:'2–8 MO/set', desc:'Ingranaggi di precisione in ottone, prodotti a Piltover. Usati per meccanismi di base e orologi di primo livello.', prop:[{k:'Provenienza',v:'Officine di Piltover, mercati'},{k:'Usi',v:'Meccanismi LV1-2'},{k:'Durabilità',v:'5 anni senza manutenzione'}]},
+      {nome:'Molle d\'Acciaio', rarity:'common', costo:'3–10 MO/set', desc:'Molle temprinate in acciaio ad alto carbonio. Fondamentali per meccanismi a scatto, trappole e congegni portabili.', prop:[{k:'Provenienza',v:'Fabbri, Metallurghi'},{k:'Usi',v:'Trappole, bilanciamento orologi LV1-2'},{k:'Tensione',v:'Fino a 50kg di forza'}]},
+      {nome:'Cristallo Hextech Grado I', rarity:'uncommon', costo:'30–80 MO/frammento', desc:'Frammenti di cristallo Hextech sufficienti per alimentare congegni di piccole dimensioni. Richiede P.M.T. per l\'acquisto.', prop:[{k:'Provenienza',v:'Piltover, commercio regolamentato'},{k:'Usi',v:'Automi LV3, modifiche magiche'},{k:'Autonomia',v:'8–12h per frammento'}]},
+      {nome:'Acciaio di Noxus', rarity:'rare', costo:'80–200 MO/lingotto', desc:'Lega metallica sviluppata dalle fonderie di Noxus. Resistenza eccezionale e lavorabilità superiore all\'acciaio comune. Richiede forgia specializzata.', prop:[{k:'Provenienza',v:'Fonderie di Noxus, commercio militare'},{k:'Resistenza',v:'+20% rispetto ad acciaio comune'},{k:'Usi',v:'Automi LV4, esoscheletri, armature avanzate'}]},
+      {nome:'Cristallo Hextech Grado II', rarity:'rare', costo:'200–600 MO/frammento', desc:'Cristallo Hextech di alta purezza, sufficiente per alimentare automi da combattimento e modifiche arcano-meccaniche permanenti.', prop:[{k:'Provenienza',v:'Laboratori certificati Piltover'},{k:'Usi',v:'Automi LV4, modifiche Non Comuni'},{k:'Autonomia',v:'48h per frammento'}]},
+      {nome:'Adamantio', rarity:'very-rare', costo:'500–2000 MO/lingotto', desc:'Il metallo più duro conosciuto. Quasi indistruttibile e capace di contenere energie magiche intense senza degradarsi. Richiede forgia a temperature estreme.', prop:[{k:'Provenienza',v:'Miniere profonde, bottino di guerra'},{k:'Proprietà',v:'Immunità ai danni critici strutturali'},{k:'Usi',v:'Automi LV5, Fortezza Tascabile'}]},
+      {nome:'Cristallo Zilean Antico', rarity:'legendary', costo:'2000–8000 MO/cristallo', desc:'Cristalli impregnati dell\'energia temporale di Zilean il Custode del Tempo. Estremamente rari e instabili. Permettono di manipolare il tessuto temporale nei congegni.', prop:[{k:'Provenienza',v:'Praticamente inaccessibili, solo da Zilean o sue reliquie'},{k:'Proprietà',v:'Manipolazione temporale'},{k:'Usi',v:'Orologio Dimensionale LV4, Macchina del Tempo LV5'}]},
+    ]
+  },
 ];
 
 // ═══════════════════════════════════════════════════════════════
@@ -1532,7 +1587,7 @@ function renderIntro(m) {
   const LV_LABELS = ['LV1+','LV2+','LV3+','LV4+','LV5+'];
   return `
   <div class="intro-card">
-    <h2>${m.emoji} ${m.nome}</h2>
+    <h2>${m.emoji} ${m.nome}${m.patente ? ` <span style="font-size:.6em;font-weight:400;background:rgba(90,138,216,.15);color:var(--uncommon);border:1px solid rgba(90,138,216,.3);padding:3px 10px;border-radius:12px;vertical-align:middle;letter-spacing:.08em">${m.patente}</span>` : ''}</h2>
     <p class="tagline">${m.tagline}</p>
     <p style="color:var(--text2);font-size:.95rem;margin-bottom:12px">${m.desc}</p>
     <div class="rules-grid">
