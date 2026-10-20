@@ -1462,7 +1462,32 @@ const MESTIERI = [
     ]
   },
 ];
-
+// RIMUOVE I DUPLICATI
+(function () {
+  const refusi = {
+    'potionofhillgiantstrenght': 'potionofhillgiantstrength',
+    'potionofanimalfrienship': 'potionofanimalfriendship',
+    'deacanterofendlesswater': 'decanterofendlesswater',
+    'headbendofintellect': 'headbandofintellect'
+  };
+  const chiave = s => {
+    const k = (s || '').toLowerCase().replace(/×/g, 'x').replace(/[^a-z0-9+]/g, '');
+    return refusi[k] || k;
+  };
+  MESTIERI.forEach(m => m.livelli.forEach(lv => {
+    const visti = new Map();
+    const pulita = [];
+    lv.items.forEach(it => {
+      const k = chiave(it.n);
+      if (!visti.has(k)) { visti.set(k, pulita.length); pulita.push(it); return; }
+      const vecchio = pulita[visti.get(k)];
+      if (it.prog) vecchio.prog = true;
+      if (it.url && it.url !== 'https://5e.tools/') vecchio.url = it.url;
+      if ((it.desc || '').length > (vecchio.desc || '').length) vecchio.desc = it.desc;
+    });
+    lv.items = pulita;
+  }));
+})();
 // ═══════════════════════════════════════════════════════════════
 //  STATE
 // ═══════════════════════════════════════════════════════════════
